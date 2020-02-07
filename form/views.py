@@ -1,4 +1,4 @@
-from form.form import StuForm
+from form.form import EmpForm
 import datetime
 from django.shortcuts import render
 
@@ -8,5 +8,6 @@ from django.http import HttpResponse
 
 
 def index(request):
-    stu = StuForm()
-    return render(request, "/html/index.html", {'form': stu})
+    stu = EmpForm()
+    stu = EmpForm()
+    return render(request, "index.html", {'form': stu})
