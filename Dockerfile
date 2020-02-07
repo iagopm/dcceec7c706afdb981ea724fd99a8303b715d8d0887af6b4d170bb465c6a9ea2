@@ -23,11 +23,8 @@ RUN apt install python3-pip -y
 
 RUN pip3 install Django==3.0.3
 
-RUN mkdir /home/
-RUN cd /home/
 RUN git clone https://github.com/iagopm/dcceec7c706afdb981ea724fd99a8303b715d8d0887af6b4d170bb465c6a9ea2.git /home/
-RUN python3 
-RUN /home/dcceec7c706afdb981ea724fd99a8303b715d8d0887af6b4d170bb465c6a9ea2/manage.py runserver 0:8000
+RUN alias execute="python3 /home/manage.py runserver 0:8000"
 
 
 #RUN mkdir /home/mcserver
