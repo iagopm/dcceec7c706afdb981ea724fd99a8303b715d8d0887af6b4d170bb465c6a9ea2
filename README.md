@@ -1,2 +1,8 @@
-# dcceec7c706afdb981ea724fd99a8303b715d8d0887af6b4d170bb465c6a9ea2
-scripts
+# build image
+    docker build --compress -t python-web:1 <repo dir>
+ 
+# run image
+    docker run -P  --name pw-it python-web:1
+# run server
+    docker attach <container>
+    python3 /home/manage.py runserver 0:8000
