@@ -23,4 +23,4 @@ RUN apt install python3-pip -y
 
 RUN pip3 install Django==3.0.3
 
-RUN git clone https://github.com/iagopm/dcceec7c706afdb981ea724fd99a8303b715d8d0887af6b4d170bb465c6a9ea2.git /home/
+RUN git clone https://github.com/iagopm/pyweb-docker.git /home/
